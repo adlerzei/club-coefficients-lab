@@ -449,13 +449,27 @@ tr.highlight td {
 }
 
 @media (max-width: 760px) {
+  /* Space below the fixed dark-mode toggle button */
   .hero {
-    padding-top: 1.75rem;
+    padding-top: 3.8rem;
   }
 
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  /* Reset button becomes full-width */
   .controls-headline {
     flex-direction: column;
     align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .ghost-btn {
+    width: 100%;
+    text-align: center;
+    min-height: 44px;
+    padding: 0.65rem 1rem;
   }
 
   .controls-card,
@@ -464,14 +478,77 @@ tr.highlight td {
     padding: 0.95rem;
   }
 
-  .leg-options,
-  .qualifier-options {
+  /* Condensed fixture nesting */
+  .competition-block {
+    padding: 0.7rem;
+  }
+
+  .round-block {
+    padding: 0.6rem;
+  }
+
+  .tie-card {
+    padding: 0.65rem;
+    margin-bottom: 0.55rem;
+  }
+
+  /* Leg result buttons: single column, larger tap area */
+  .leg-options {
     grid-template-columns: 1fr;
+  }
+
+  .qualifier-options {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .leg-option,
+  .qualifier-option {
+    min-height: 44px;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.82rem;
+  }
+
+  /* Table: remove forced min-width and hide least-critical columns */
+  table {
+    min-width: unset;
+  }
+
+  /* Hide Basispunkte (col 4) and Koeffizient (col 7) on mobile */
+  table th:nth-child(4),
+  table td:nth-child(4),
+  table th:nth-child(7),
+  table td:nth-child(7) {
+    display: none;
   }
 
   th,
   td {
-    padding: 0.62rem 0.5rem;
+    padding: 0.58rem 0.45rem;
+  }
+
+  th {
+    font-size: 0.62rem;
+  }
+
+  td {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 420px) {
+  /* Extra-small phones: also hide Starter (col 3) */
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: none;
+  }
+
+  .tie-teams {
+    font-size: 0.8rem;
+  }
+
+  .leg-option,
+  .qualifier-option {
+    font-size: 0.78rem;
   }
 }
 
