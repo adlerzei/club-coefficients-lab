@@ -1,10 +1,10 @@
-# UEFA Einjahreswertung Studio
+# UEFA Einjahreswertung Tabellenrechner
 
 Interaktive Website für offene K.o.-Duelle in UCL, UEL und UECL mit Einzelspiel-Bewertung (Hinspiel / Rückspiel) und Live-Tabelle.
 
 ## Start
 
-1. index.html im Browser öffnen.
+1. https://adlerzei.github.io/club-coefficients-lab/ im Browser öffnen.
 2. Pro Duell erst Spielresultate setzen (Hinspiel, Rückspiel).
 3. Danach "Qualifiziert" wählen, damit der K.o.-Baum weitergerechnet wird.
 4. Tabelle aktualisiert sich sofort.
