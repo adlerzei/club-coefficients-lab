@@ -70,7 +70,7 @@ const UEFA_DATA = {
             {
               id: "ucl-sf-1",
               home: "PSG",
-              awayFrom: "Bayern",
+              away: "Bayern",
               legs: [
                 { id: "ucl-sf-1-l1", label: "Hinspiel" },
                 { id: "ucl-sf-1-l2", label: "Rückspiel" }
@@ -79,7 +79,7 @@ const UEFA_DATA = {
             {
               id: "ucl-sf-2",
               home: "Atletico",
-              awayFrom: "Arsenal",
+              away: "Arsenal",
               legs: [
                 { id: "ucl-sf-2-l1", label: "Hinspiel" },
                 { id: "ucl-sf-2-l2", label: "Rückspiel" }
