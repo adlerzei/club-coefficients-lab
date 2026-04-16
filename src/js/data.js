@@ -1,19 +1,25 @@
 const UEFA_DATA = {
   seasonLabel: "UEFA Saison 2025/26",
-  dataStand: "Stand: 15.04.2026",
+  dataStand: "Stand: 16.04.2026, 13:47 Uhr",
   methodologyNote:
     "Offene Duelle werden als Einzelspiele bewertet: Hinspiel und Rückspiel geben separat Punkte (Sieg/Remis).",
   associations: {
-    England: { starters: 9, basePoints: 25.569 },
+    England: { starters: 9, basePoints: 25.847 },
     Italy: { starters: 7, basePoints: 18.714 },
     Spain: { starters: 8, basePoints: 21.343 },
-    Germany: { starters: 7, basePoints: 20.285 },
+    Germany: { starters: 7, basePoints: 20.785 },
     France: { starters: 7, basePoints: 17.178 },
-    Portugal: { starters: 5, basePoints: 19.3 },
+    Portugal: { starters: 5, basePoints: 19.5 },
     Netherlands: { starters: 6, basePoints: 9.812 },
     Greece: { starters: 5, basePoints: 13.8 },
+    Poland: { starters: 4, basePoints: 15.75 },
+    Denmark: { starters: 4, basePoints: 12.25 },
+    Cyprus: { starters: 4, basePoints: 12.156 },
+    Belgium: { starters: 5, basePoints: 11.4 },
     Ukraine: { starters: 4, basePoints: 7.937 },
-    Turkey: { starters: 5, basePoints: 11.075 }
+    Turkey: { starters: 5, basePoints: 11.075 },
+    Czechia: { starters: 5, basePoints: 11.025 },
+    Norway: { starters: 5, basePoints: 8.05 }
   },
   teams: {
     PSG: { association: "France" },
@@ -57,25 +63,6 @@ const UEFA_DATA = {
       },
       rounds: [
         {
-          id: "ucl-qf",
-          key: "qf",
-          name: "Viertelfinale",
-          ties: [
-            {
-              id: "ucl-qf-2",
-              home: "RealMadrid",
-              away: "Bayern",
-              legs: [{ id: "ucl-qf-2-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "ucl-qf-4",
-              home: "Sporting",
-              away: "Arsenal",
-              legs: [{ id: "ucl-qf-4-l2", label: "Rückspiel" }]
-            }
-          ]
-        },
-        {
           id: "ucl-sf",
           key: "sf",
           name: "Halbfinale",
@@ -83,7 +70,7 @@ const UEFA_DATA = {
             {
               id: "ucl-sf-1",
               home: "PSG",
-              awayFrom: "ucl-qf-2",
+              awayFrom: "Bayern",
               legs: [
                 { id: "ucl-sf-1-l1", label: "Hinspiel" },
                 { id: "ucl-sf-1-l2", label: "Rückspiel" }
@@ -92,7 +79,7 @@ const UEFA_DATA = {
             {
               id: "ucl-sf-2",
               home: "Atletico",
-              awayFrom: "ucl-qf-4",
+              awayFrom: "Arsenal",
               legs: [
                 { id: "ucl-sf-2-l1", label: "Hinspiel" },
                 { id: "ucl-sf-2-l2", label: "Rückspiel" }
