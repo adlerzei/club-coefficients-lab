@@ -1,22 +1,22 @@
 const UEFA_DATA = {
   seasonLabel: "UEFA Saison 2025/26",
-  dataStand: "Stand: 16.04.2026, 13:47 Uhr",
+  dataStand: "Stand: 16.04.2026, 23:43 Uhr",
   methodologyNote:
     "Offene Duelle werden als Einzelspiele bewertet: Hinspiel und Rückspiel geben separat Punkte (Sieg/Remis).",
   associations: {
-    England: { starters: 9, basePoints: 25.847 },
-    Italy: { starters: 7, basePoints: 18.714 },
-    Spain: { starters: 8, basePoints: 21.343 },
-    Germany: { starters: 7, basePoints: 20.785 },
-    France: { starters: 7, basePoints: 17.178 },
-    Portugal: { starters: 5, basePoints: 19.5 },
-    Netherlands: { starters: 6, basePoints: 9.812 },
-    Greece: { starters: 5, basePoints: 13.8 },
+    England: { starters: 9, basePoints: 26.569 },
+    Italy: { starters: 7, basePoints: 19.0 },
+    Spain: { starters: 8, basePoints: 21.406 },
+    Germany: { starters: 7, basePoints: 21.214 },
+    France: { starters: 7, basePoints: 17.535 },
+    Portugal: { starters: 5, basePoints: 20.1 },
+    Netherlands: { starters: 6, basePoints: 9.979 },
+    Greece: { starters: 5, basePoints: 14.2 },
     Poland: { starters: 4, basePoints: 15.75 },
     Denmark: { starters: 4, basePoints: 12.25 },
     Cyprus: { starters: 4, basePoints: 12.156 },
     Belgium: { starters: 5, basePoints: 11.4 },
-    Ukraine: { starters: 4, basePoints: 7.937 },
+    Ukraine: { starters: 4, basePoints: 8.312 },
     Turkey: { starters: 5, basePoints: 11.075 },
     Czechia: { starters: 5, basePoints: 11.025 },
     Norway: { starters: 5, basePoints: 8.05 }
@@ -117,45 +117,14 @@ const UEFA_DATA = {
       },
       rounds: [
         {
-          id: "uel-qf",
-          key: "qf",
-          name: "Viertelfinale",
-          ties: [
-            {
-              id: "uel-qf-1",
-              home: "Braga",
-              away: "Betis",
-              legs: [{ id: "uel-qf-1-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uel-qf-2",
-              home: "Freiburg",
-              away: "CeltaVigo",
-              legs: [{ id: "uel-qf-2-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uel-qf-3",
-              home: "Porto",
-              away: "NottinghamForest",
-              legs: [{ id: "uel-qf-3-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uel-qf-4",
-              home: "Bologna",
-              away: "AstonVilla",
-              legs: [{ id: "uel-qf-4-l2", label: "Rückspiel" }]
-            }
-          ]
-        },
-        {
           id: "uel-sf",
           key: "sf",
           name: "Halbfinale",
           ties: [
             {
               id: "uel-sf-1",
-              homeFrom: "uel-qf-1",
-              awayFrom: "uel-qf-2",
+              home: "Braga",
+              away: "Freiburg",
               legs: [
                 { id: "uel-sf-1-l1", label: "Hinspiel" },
                 { id: "uel-sf-1-l2", label: "Rückspiel" }
@@ -163,8 +132,8 @@ const UEFA_DATA = {
             },
             {
               id: "uel-sf-2",
-              homeFrom: "uel-qf-3",
-              awayFrom: "uel-qf-4",
+              home: "NottinghamForest",
+              away: "AstonVilla",
               legs: [
                 { id: "uel-sf-2-l1", label: "Hinspiel" },
                 { id: "uel-sf-2-l2", label: "Rückspiel" }
@@ -202,45 +171,14 @@ const UEFA_DATA = {
       },
       rounds: [
         {
-          id: "uecl-qf",
-          key: "qf",
-          name: "Viertelfinale",
-          ties: [
-            {
-              id: "uecl-qf-1",
-              home: "Shakhtar",
-              away: "AZ",
-              legs: [{ id: "uecl-qf-1-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uecl-qf-2",
-              home: "CrystalPalace",
-              away: "Fiorentina",
-              legs: [{ id: "uecl-qf-2-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uecl-qf-3",
-              home: "RayoVallecano",
-              away: "AEKAthens",
-              legs: [{ id: "uecl-qf-3-l2", label: "Rückspiel" }]
-            },
-            {
-              id: "uecl-qf-4",
-              home: "Mainz05",
-              away: "Strasbourg",
-              legs: [{ id: "uecl-qf-4-l2", label: "Rückspiel" }]
-            }
-          ]
-        },
-        {
           id: "uecl-sf",
           key: "sf",
           name: "Halbfinale",
           ties: [
             {
               id: "uecl-sf-1",
-              homeFrom: "uecl-qf-1",
-              awayFrom: "uecl-qf-2",
+              home: "Shakhtar",
+              away: "CrystalPalace",
               legs: [
                 { id: "uecl-sf-1-l1", label: "Hinspiel" },
                 { id: "uecl-sf-1-l2", label: "Rückspiel" }
@@ -248,8 +186,8 @@ const UEFA_DATA = {
             },
             {
               id: "uecl-sf-2",
-              homeFrom: "uecl-qf-3",
-              awayFrom: "uecl-qf-4",
+              home: "RayoVallecano",
+              away: "Strasbourg",
               legs: [
                 { id: "uecl-sf-2-l1", label: "Hinspiel" },
                 { id: "uecl-sf-2-l2", label: "Rückspiel" }
